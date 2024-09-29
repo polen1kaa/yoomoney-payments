@@ -1,5 +1,5 @@
 
-# Yoomoney Payments
+# YooMoney Payments
 
 Accepting payments via YooMoney wallet
 
