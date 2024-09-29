@@ -27,6 +27,7 @@ Copy the yoomoney.php file to the directory with your project
 ### Creating a payment link
 ```php
 <?php
+include("yoomoney.php");
 $yoomoney = new YooMoneyPayments(
   "wallet" => 4100000000000000, # Your YooMoney wallet number
   "secret" => "your-secret-word" # Secret word received when enabling HTTP notifications
@@ -48,6 +49,7 @@ if($answer["code"] == 200){
 It should receive [notifications from YooMoney](https://yoomoney.ru/transfer/myservices/http-notification) about successful payments.
 ```php
 <?php
+include("yoomoney.php");
 $yoomoney = new YooMoneyPayments(
   "wallet" => 4100000000000000, # Your YooMoney wallet number
   "secret" => "your-secret-word" # Secret word received when enabling HTTP notifications
