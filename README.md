@@ -54,7 +54,7 @@ $yoomoney = new YooMoneyPayments(
 );
 $answer = $yoomoney->webhookCheck($_POST);
 if($answer["code"] == 200){
-  echo "Successfully paid payment with label <".$POST["label"].">!" # {"code": 200, "data": "Successfully paid payment with label <123456>!"}
+  echo "Successfully paid payment with label <".$POST["label"].">!"; # {"code": 200, "data": "Successfully paid payment with label <123456>!"}
   
   /*
   Here you can process a successful payment. For example, mark the purchase as paid.
